@@ -1,0 +1,19 @@
+/* body {
+    /*background-image: url("../images/blackglitterbackground.jpg");*/
+    /* background-position: left top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%; */
+} */
+
+header {
+    color: aqua
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, 30px;
+}
+
+#red {
+    height: 10px;
+    width: 10px;
+}
