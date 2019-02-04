@@ -1,80 +1,110 @@
-<!DOCTYPE html>
+<!DOCTYPE <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Crystal Collector</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- CSS File --> 
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
+</head>  
 
-    <meta charset="utf-8" />
+<body>
 
-    <title>Crystals Collector</title>
+  <div class="container">
+  
+  <div class="jumbotron text-center" style="background-color: aquamarine; color:black;"><h1>Crystal Collector</h1></div>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- INSTRUCTIONS -->
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card mb-4">
+        <div class="card-header">
+          <h4 class="card-title text-center">Instructions</h4>
+        </div>
+        <div class="card-body"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCORES AND CRYSTALS -->
+  <div class="row">
+    
+  <!-- LUCKY NUMBER -->  
+  <div class="col-md-3">
+    <div class="card mb-4">
+      <div class="card-header">
+        <h3 class="card-title text-center">Lucky Number</h3>
+      </div>
+      <div class="card-body">
+        <h4 class="text-center" id="lucky"></h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- YOUR SCORE -->  
+  <div class="col-md-3">
+    <div class="card mb-4">
+      <div class="card-header">
+        <h3 class="card-title text-center" >Score</h3>
+      </div>
+      <div class="card-body ">
+        <h4 class="text-center" id="score"></h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="card mb-4">
+      <div class="card-header">
+        <h3 class="card-title text-center" >Choose a crystal!</h3>
+      </div>
+      <div class="card-body text-center">
+
+        <img src="assets/images/blue.png" class="btn" id="blue blue-button" width="15%" height="7%">
+
+        <img src="assets/images/yellow.png" class="btn" id="yellow yellow-button" width="20%" height="10%">
+
+        <img src="assets/images/green.png" class="btn" id="green green-button" width="20%" height="10%">
+
+        <img src="assets/images/red.png" class="btn" id="red red-button" width="20%" height="10%">
+      </div>
+    </div>
+  </div>
+</div>
+ 
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="card mb-4">
+      <div class="card-header">
+        <h3 class="card-title text-center">Wins</h3>
+      </div>
+      <div class="card-body">
+        <span id="wins"></span>
+      </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card mb-4">
+        <div class="card-header">
+          <h3 class="card-title text-center">Losses</h3>
+        </div>
+        <div class="card-body">
+          <span id="losses"></span>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery.js"></script>
 
-    <!-- CSS File --> 
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
-
-     <!-- JavaScript File -->
+    <!-- JavaScript File -->
     <script src="assets/javascript/game.js"></script>
-   
-</head>  
-
-
-
-
-
-
-<body>
-    <header>Crystals Collector</header>
-
-    <h3>Choose a crystal!</h3>
-
-      <!-- Here we have div called "random-number" where our random number will go -->
-    
-    <h1 id="lucky-number" class="text-center">Click for your lucky number</h1>
-
-<div class="row">
-    <p>Wins</p>
 </div>
-    <div class="row">
-
-<!--Red Crystal and Button-->    
-    <div id="red" class="col-sm-3">
-        
-        <button id="red-button" class="btn">
-            <img src="assets/images/RedRuby.png" alt="red">
-        </button>
-
-      </div>
-  </div>
-<!--Blue Crystal and Button-->
-      <!-- <div class="blue">
-        <img src="assets/images/BlueSapphire.png" alt="blue">
-        <button id="btn">Blue</button>
-      </div> -->
-
-      <!--Green Crystal and Button-->
-      <!-- <div class="green">
-        <img src="assets/images/GreenEmerald.png" alt="green">
-        <button id="btn">Green</button>
-      </div> -->
-
-      <!--Yellow Crystal and Button-->
-      <!-- <div class="yellow">
-        <img src="assets/images/YellowSapphire.png" alt="yellow">
-        <button id="btn">Yellow</button>
-      </div> -->
-
-      <!-- <div class="container">
-        <div class="row">
-          <div class="col">Column</div>
-          <div class="col">Column</div>
-          <div class="w-100"></div>
-          <div class="col">Column</div>
-          <div class="col">Column</div>
-        </div>
-      </div> -->
-
 </body>
 </html>
