@@ -1,5 +1,4 @@
-<!DOCTYPE <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,7 +23,9 @@
         <div class="card-header">
           <h4 class="card-title text-center">Instructions</h4>
         </div>
-        <div class="card-body"></div>
+        <div class="card-body">
+          <body>You will be given a lucky number at the beginning of each game. Each crystal has a mystery value. When you click on a crystal, its value will get added to your score. If you get to the lucky number, you win. If you do not, you lose.</body>
+        </div>
       </div>
     </div>
   </div>
@@ -55,7 +56,7 @@
       </div>
     </div>
   </div>
-
+<!-- CRYSTALS -->
   <div class="col-md-6">
     <div class="card mb-4">
       <div class="card-header">
@@ -75,7 +76,7 @@
   </div>
 </div>
  
-
+<!-- WINS/LOSSES -->
 <div class="row">
   <div class="col-md-6">
     <div class="card mb-4">
@@ -83,7 +84,7 @@
         <h3 class="card-title text-center">Wins</h3>
       </div>
       <div class="card-body">
-        <span id="wins"></span>
+        <h4 class="text-center" id="wins">0</h4>
       </div>
       </div>
     </div>
@@ -94,14 +95,14 @@
           <h3 class="card-title text-center">Losses</h3>
         </div>
         <div class="card-body">
-          <span id="losses"></span>
+          <h4 class="text-center" id="losses">0</h4>
         </div>
       </div>
     </div>
   </div>
 
     <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- JavaScript File -->
     <script src="assets/javascript/game.js"></script>
